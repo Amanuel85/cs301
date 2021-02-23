@@ -10,6 +10,6 @@ let z = X;
 x = Y;
 console.log(x, y, z);
 console.log(x + y);
-ab = 6;
-zd = 5;
+let ab = 6;
+let zd = 5;
 console.log(ab + zd);
