@@ -10,3 +10,7 @@ let z = X;
 x = Y;
 console.log(x, y, z);
 console.log(x + y);
+
+m = 7;
+n = 8;
+console.log(m + n);
