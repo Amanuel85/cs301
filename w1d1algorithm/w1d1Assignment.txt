@@ -1,1 +1,52 @@
+1 What happens when an assignment is performed without using let or const keywords in strict mode?
+In strict mode if assignment is performed without let or const it will give error, but without strict mode for example we can assign x = 7 and y = 8 and console x + y and it does not give error. Therefore, we need to use strict mode to use the modern way of JavaScript and avoid some problems 
+2 List 5 reserved keywords in JavaScript
+	Let 
+	Const
+	Function
+	While
+	For
+	If
+	Switch
+3 How is a computer program similar/ different than an algorithm
+The basic similarity between computer program and algorithm is that both are step by step instructions or process to do some task. 
+The difference between algorithm and computer programs is algorithm is not language specific while computer programs need to be written in a specific language that the computer cand understand such as JavaScript, Java, Python etc. Computer programs are language specific. 
+4 Write at least two algorithms you perform on your daily life, with at least one algorithm that can be converted to computer program.
+4 A, Algorithm to make a coffee 
+              Steps and instructions 
+	Add cup of water
+	Add a coffee 
+	Turn on the coffee machine
+	Wait until the water boils 
+	Put the coffee in to the cup
+	Add sugar and stirs until there is enough sugar
+	Drink it, enjoy it 
+4 B, Algorithm for my daily routine 
+If it is weekdays and Saturday wake up at 7:00 AM
+	Take shower 
+	Do some exercise 
+	Eat breakfast and drink tea
+	Study until class time 
+	Go to class until lunch time
+	Got to lunch
+	Again, got to class
+	After class ended start working on homework’s until I finished 
+	Eat dinner and watch tv 
+	Got to bed 
+If it is Sunday 
+	Wake up at 9:00 am
+	Go to church 
+	Eat breakfast 
+	Socialize 
+	Go to grocery 
+	Watch tv 
+
+
+
+
+
+
+
+ 
+
 
