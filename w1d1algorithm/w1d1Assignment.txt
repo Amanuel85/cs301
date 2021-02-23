@@ -40,6 +40,9 @@ If it is Sunday
 	Socialize 
 	Go to grocery 
 	Watch tv 
+	eat dinner 
+	sleep 
+
 
 
 
