@@ -1,7 +1,7 @@
 "use strict";
 console.log("Hello World");
 console.log(5 + 5);
-const X = 7;
+const X = 9;
 const Y = 15;
 console.log(X + Y);
 let x = 22;
@@ -10,3 +10,6 @@ let z = X;
 x = Y;
 console.log(x, y, z);
 console.log(x + y);
+ab = 6;
+zd = 5;
+console.log(ab + zd);
