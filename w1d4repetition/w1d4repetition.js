@@ -1,5 +1,4 @@
 "use strict"
-
 let prompt = require("prompt-sync")();
 // question 1 
 /*A prime number (or a prime) is a natural number greater than 1 that is not a product of two
@@ -19,7 +18,6 @@ start counter i = 2
  loop to the number and devid the number by i 
 update the counter 
 if the counter > 0 the number is not prime */
-/*
 let number = prompt("Enter your number: ")
 
  let counter = 0 ;
@@ -34,21 +32,16 @@ let number = prompt("Enter your number: ")
      console.log("Not prime")
  }
  else(console.log("prime"))
- */
-
  //b 
- /*
  let isPrime = true
  for (let z = 2;z<number;z++){
      if(number %z ===0){
          isPrime = false
          break; 
      }
-    
  }
  console.log(isPrime)
- */
-// Write a JavaScript program to calculate the factorial value of a given number.
+// Q2 Write a JavaScript program to calculate the factorial value of a given number.
 // E.g., factorial 4 = 4*3*2*1 = 24
 // input user input number
 // process :
@@ -56,7 +49,6 @@ let number = prompt("Enter your number: ")
   --multiply eachother
   outpu : factorial value
   */
- /*
  let num = +prompt("Enter a number:")
  let sum = 1
  for(let i = 1 ;i<= num;i++){
@@ -64,7 +56,6 @@ let number = prompt("Enter your number: ")
 
  }
   console.log("factorial value of "+num+ " is: "+sum)
-  */
  /*question 3
  Write a JavaScript program that gives the user three tries to guess the correct pin of the
 account. You set the pin as a constant. When correct display “Correct, welcome back.” When
@@ -98,7 +89,6 @@ break
   }
   if (counter >2){
   console.log("Sorry but you have been locked out")}
-
 /* question 4
  Write a defining table and JavaScript program to Display Fibonacci series up to N terms. N
 being positive integer from user input. 
@@ -111,7 +101,6 @@ starting from 0 and 1. That is, fib(0) = 0, fib(1) = 1, fib(n) = fib(n – 1) + 
 // the firtst two terms are
 // F1=0, F2 = 1;
 // fn = f(n-1)+f(n-2)
-/*
 let number = +prompt("Enter a number")
 let f0 = 0;
 let f1 = 1;
@@ -122,10 +111,7 @@ for(let i = 1;i<=number;i++){
     nextItem = f0+f1;
     f0 = f1;
     f1 = nextItem;
-
 }
-*/
-
 /*
 5. Write a JavaScript program to compute sum of all the digits in a given integer number.
 eg. input 123 ,output 6
@@ -139,7 +125,6 @@ update sum = sum + number%10
 update number = number/10 , because the last digit has been removed
 change number to Integer
 */ 
-/*
 let num = +prompt("Enter number :")
 let sum = 0; 
 while(num>0){
@@ -149,18 +134,14 @@ while(num>0){
     num = parseInt(num)
 }
 console.log(sum)
-*/
 /*6. Write JS code to print following patterns using nested loops */
 //6 a
-/*
-
 for(let i = 1;i<=5;i++){
     let row = ""
     for(let j =1;j<= i;j++){
         row += i
     }console.log(row)
 }
-
 //6b
 for(let i = 1;i<=5;i++){
     let row = '';
@@ -168,7 +149,6 @@ for(let i = 1;i<=5;i++){
     row +=j}
     console.log(row)
 }
-
 //6c 
 for(let i=5;i>=1;i--){
     let  row ='';
@@ -176,4 +156,3 @@ for(let i=5;i>=1;i--){
         row +=i }
     console.log(row) }
 
-*/
