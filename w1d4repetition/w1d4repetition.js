@@ -56,6 +56,7 @@ let number = prompt("Enter your number: ")
 
  }
   console.log("factorial value of "+num+ " is: "+sum)
+  
  /*question 3
  Write a JavaScript program that gives the user three tries to guess the correct pin of the
 account. You set the pin as a constant. When correct display “Correct, welcome back.” When
