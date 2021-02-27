@@ -75,7 +75,7 @@ function livingvolume(houseWidth,houseHeight,houseDepth){
 }
 function triangleArea(a = houseSweep,b = houseSweep,c = houseWidth){
     let s = (a+b+c)/2
-    let areaofTriangle = Math.sqrt((s-a)*(s-b)*(s-c))
+    let areaofTriangle = Math.sqrt(s(s-a)*(s-b)*(s-c))
     
    areaofTriangle = Math.floor(areaofTriangle)
    return areaofTriangle
