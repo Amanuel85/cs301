@@ -131,12 +131,12 @@ E.g., leap years: 2016, 2000
 E.g., not leap years: 1700, 1800, 100
 
 */
-let year = +prompt("Enter year: ")
+// let year = +prompt("Enter year: ")
 
-    if((year %4 === 0&& year %100 !=0)|| (year%100 ===0 && year %400 ===0)){
-        console.log("It is leap year")
-    }
-    else{console.log("It is not leap year")}
+//     if((year %4 === 0&& year %100 !=0)|| (year%100 ===0 && year %400 ===0)){
+//         console.log("It is leap year")
+//     }
+//     else{console.log("It is not leap year")}
 
 
 // let x ;
@@ -145,4 +145,18 @@ let year = +prompt("Enter year: ")
 // console.log(x)
 // console.log(!x)
 // console.log(!!x)
+// }
+
+// let number = +prompt("Enter a number between 1 - 10")
+// let correctnumber = 5
+// /*
+// while number !=correctnumber
+// print prompt
+// if number matches 
+// print congratulate
+// break loop
+// if not matched print prompt
+// */
+// while(number !== correctnumber){
+//     if 
 // }
