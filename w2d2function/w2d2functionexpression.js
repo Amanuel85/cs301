@@ -91,7 +91,7 @@ const compute = function(add,a,b){
 const add = function(a,b){
     console.log(a+b)
 };
-compute(add,2,3)
+compute(add,2,3) // expect 5
 
 /// Refactor to pass add logic as an anonymous function. (Make a copy first)
 compute(
@@ -99,11 +99,12 @@ compute(
     function (x,y){
         console.log(x+y)
     },2,4
-)
+) // expect 6
+
 // Refactor to pass add logic as an arrow function. (Make a copy first)
 compute(
 
     (x,y)=>{
         console.log(x+y)
     },2,9
-)
+) // expect 11
