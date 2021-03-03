@@ -2,7 +2,7 @@
 let prompt = require("prompt-sync")();
 
 
-/* Q5a Write a function expression and assign it to the variable
+/* Q4 Write a function expression and assign it to the variable
 greatestCommonDivisor, which will compute GCD (Greatest Common Divisor) of two
 numbers. GCD is the largest number that divides both. For example GCD of 20 and 28 is 4 and
 GCD of 98 and 56 is 14.
@@ -37,7 +37,7 @@ const greatestCommonDivisor = function(num1,num2){
 console.log(`Expect 14 for GCD of(98 and 56): ${greatestCommonDivisor(98,56)}`)
 
 
-/* Q5b Write a function expression to find LCM of any two numbers using the
+/* Q5 Write a function expression to find LCM of any two numbers using the
 greatestCommonDivisor function from previous question. Assign it to the variable
 leastCommonMultiple. LCM of two numbers is the smallest number that can be
 divided evenly by both numbers. Write it as a function expression 
@@ -80,7 +80,7 @@ const leastCommonMultiple2 = function(a,b){
 console.log(`Expect 392 for LCM of(98 and 56):${leastCommonMultiple2(98,56)}`)
 
 
-/*
+/* Q7
 Write a function compute, that takes three parameters. First parameter is a call back
 function that does the actual operation, second and third are the operands.
 
