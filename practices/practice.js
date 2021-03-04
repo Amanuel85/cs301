@@ -391,35 +391,35 @@ console.log(isSumOddorEven(123456))
 
 // console.log(strictNum(6))
 
-// function houseVolume(width, height, depth, sweep){
-//     const lv = livingVolume(width, height, depth);
-//     const rv = roofVolume(sweep, width, depth);
-//     return  lv + rv;  
-// }
+function houseVolume(width, height, depth, sweep){
+    const lv = livingVolume(width, height, depth);
+    const rv = roofVolume(sweep, width, depth);
+    return  lv + rv;  
+}
 
-// function livingVolume(width, height, depth){
-//     return width * height * depth;
-// }
+function livingVolume(width, height, depth){
+    return width * height * depth;
+}
 
-// function roofVolume(sweep, width, depth){
-//     return triangleArea(sweep, sweep, width) * depth;
-// }
+function roofVolume(sweep, width, depth){
+    return triangleArea(sweep, sweep, width) * depth;
+}
 
-// function triangleArea(sideA, sideB, sideC){
-//     const s = (sideA + sideB + sideC)/2
-//     const product = s * (s - sideA) * (s - sideB) * (s - sideC);
-//     const result = Math.sqrt(product);
-//     return result;
-// }
+function triangleArea(sideA, sideB, sideC){
+    const s = (sideA + sideB + sideC)/2
+    const product = s * (s - sideA) * (s - sideB) * (s - sideC);
+    const result = Math.sqrt(product);
+    return result;
+}
 
-// console.log("expect 2080", houseVolume(16,10,10,10));
-// roof:  8 * 6 = 48, * 10 = 480
-// living 10*10*16 = 1600
+console.log("expect 2080", houseVolume(16,10,10,10));
+//roof:  8 * 6 = 48, * 10 = 480
+//living 10*10*16 = 1600
 //tot 2080
-const evenOrOdd = function(n){
-    let even = true
-    if (n%2!== 0){
-       even = false
-    }
-return even}
-evenOrOdd(5)
+// const evenOrOdd = function(n){
+//     let even = true
+//     if (n%2!== 0){
+//        even = false
+//     }
+// return even}
+// evenOrOdd(5)

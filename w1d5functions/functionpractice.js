@@ -84,4 +84,35 @@ if (num === sum){
     console.log(num + "is perfect number")
     }
     else {console.log("it is not perfect number")}
-
+    /*  Q3
+ * Write a program that calculates the total volume of a house, including the volume of the roof
+space. Your program must allow the user to enter width, depth, height and sweep as shown in
+figure below. Write code to call and test your function
+ */
+    let houseWidth = +prompt("Enter the width of the house: ");
+    let houseDepth = +prompt("Enter the depth  of the house: ");
+    let houseHeight = +prompt("Enter the height  of the house: ");
+    let houseSweep = +prompt("Enter the Sweep  of the house: ");
+    
+    function livingvolume(houseWidth,houseHeight,houseDepth){
+        let livingAreaVolume = houseWidth*houseHeight*houseDepth
+        return livingAreaVolume
+    }
+    function triangleArea(a = houseSweep,b = houseSweep,c = houseWidth){
+        let s = (a+b+c)/2
+        let areaofTriangle = Math.sqrt(s(s-a)*(s-b)*(s-c))
+        
+       areaofTriangle = Math.floor(areaofTriangle)
+       return areaofTriangle
+    }
+    
+    //console.log(triangleArea())
+    function roofVolume(trianglearea,houseDepth){
+        let volumeofRoof = houseSweep *  triangleArea()  //roof volume = treagle are *
+        return volumeofRoof
+    }
+    function houseVolume(living,roof){ // house volume = living room volume = roof voluem 
+        return living + roof
+    }
+    console.log("The house voulume is "
+    ,houseVolume(livingvolume(houseWidth,houseHeight,houseDepth),roofVolume(houseSweep,triangleArea())))
