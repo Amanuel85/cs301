@@ -1,8 +1,14 @@
 "use strict";
 let prompt = require("prompt-sync")();
 
-
-/*
+exports.isPrime = isPrime;
+exports.areaOfCircle = areaOfCircle;
+exports.volumeOfCylinder =volumeOfCylinder;
+exports.houseVolume = houseVolume;
+exports.livingVolume = livingVolume;
+exports.roofVolume = roofVolume;
+exports.triangleArea = triangleArea;
+/* triangleArea roofVolume livingVolume houseVolume volumeOfCylinder
 1. checkPrime
 a. Write a function named checkPrime that accepts a parameter and returns true if the
 argument is a prime number otherwise returns false.
@@ -14,7 +20,7 @@ if number divided by i === 0 then it is not prime number
 //a
 */
 /**
- * 
+ * isprime 
  * @param {number} num the number to check if prime on not
  * @returns{boolean} returns if num is prime or not
  */
@@ -22,8 +28,7 @@ function isPrime(num){
     let prime = true;
          for(let i = 2;i<num;i++){
              if(num%i===0){
-             prime =  false};
-         }
+             prime =  false;} }
 return prime;}
 console.log(isPrime(11));
 //1b
@@ -46,7 +51,7 @@ input
  * @returns {number} The area of the circle.
  */
  function areaOfCircle(radius){
-    let circleArea = Math.floor(Math.PI*(radius*radius))
+    let circleArea = (Math.PI*(radius*radius));
     
     return circleArea;
     //console.log(circleArea)
@@ -89,7 +94,7 @@ houseVolume = livingVolume + roofVolume
  * @param {number} depth //
  * @param {number} sweep  sweep of the roof
  * @returns{number} retruns the living room  volume + houseVolue
- */
+ */ 
 function houseVolume(width, height, depth, sweep){
     const lvol = livingVolume(width, height, depth); 
     const rvol = roofVolume(sweep, width, depth);
@@ -114,7 +119,7 @@ function livingVolume(width, height, depth){
  * @param {number} depth house depth
  * @returns{number} // calls triangle area function and multiply 
  * the result by the other parameters
- */
+ */ 
 function roofVolume(sweep, width, depth){
     const rvol = triangleArea(sweep, sweep, width) * depth;
     return rvol;
