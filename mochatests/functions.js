@@ -1,5 +1,5 @@
 "use strict";
-
+let prompt = require("prompt-sync")();
 exports.checkPrime = checkPrime;
 
 /**
@@ -14,3 +14,5 @@ function checkPrime(num) {
     return num > 1;
 
 }
+//let numbr = prompt("Enter a number");
+console.log(checkPrime(10));
