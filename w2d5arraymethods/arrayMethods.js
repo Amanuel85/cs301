@@ -4,7 +4,7 @@ exports.insertArray = insertArray;
 //exports.getMiddle = getMiddle;
 exports.isArrayEqual = isArrayEqual;
 exports.isPalindrome = isPalindrome;
-exports.reverse2String = reverse2String
+exports.reverse2String = reverse2String;
 
 
 /* 0.  Write a function that will take an index and two arrays and splice the 
