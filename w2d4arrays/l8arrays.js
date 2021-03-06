@@ -114,13 +114,14 @@ c. Reduce to get sum of all the elements (optional)
  * @param {strint} input 
  * @returns {number}//
  */
-let input = prompt("enter list of arrays ");
+
 /**
  * 
  * @param {string} input  //
  * @returns{number}// number
  */
-function fmrString(input){
+function fmrString(){
+let input = prompt("enter list of arrays ");
 let arryList = input.split(',');
 let postiveElement = [] ;
 //let arryList = Array(input);
@@ -162,4 +163,3 @@ return nwArry}}
 
 //8. Write a function that takes an array of strings and returns array of palindrome strings only.
 
-function
