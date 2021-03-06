@@ -9,7 +9,8 @@ const { resourceUsage } = require("process");
  exports.getMiddle = getMiddle;
  exports.rotateLeft = rotateLeft;
  exports.rotateRight = rotateRight;
- exports.rotateNRight =rotateNRight
+ exports.rotateNRight =rotateNRight;
+ exports.filterRange = filterRange; 
  // 1 Write a function addend(arr) that accepts an array of numbers 
  //as parameters and returns the sum of firs and last elements of the array.
 
@@ -139,12 +140,26 @@ return postiveElement;}
 
 // Write a function filterRange(arr, a, b) that gets an array arr, looks for elements with
 // values >= a and values<= b and return a result as an array.
+/*
+/* 7.    Write a function filterRange(arr, a, b) that gets an array arr, looks for elements with values higher or equal to a and
+lower or equal to b and return a result as an array. */
+
+       // assert.strictDeepEqual(arrays.filterRange([0, 100, 3, 6, -555], 6, 160), [100, 6]);
+       /**
+        * 
+        * @param {Array} arr //
+        * @param {number} a //
+        * @param {number} b //
+        * @returns{Array}// ti returns array 
+        */
 function filterRange(arr,a,b){
-    let nwArry = [];
+    let nwArry = [] ;
     for (let i = 0 ;i<arr.length;i++){
-        if(arr[i] >= a && arr[i] >= b){
-            nwArry[i] = arr[i]
-        }
-    }
-return nwArry}
-console.log(filterRange([0, 100, 3, 6, -555], 6, 60))
+        nwArry = arr.filter(item=> item >= a)
+     
+return nwArry}}
+//console.log(filterRange([0, 100, 3, 6, -555], 6, 60));
+
+//8. Write a function that takes an array of strings and returns array of palindrome strings only.
+
+function

@@ -1,4 +1,5 @@
 "use strict"
+let prompt = require("prompt-sync")();
 /*• Write code to create an array named scores and fill it with 5 test
 scores 10, 20, 30, 40 and 50.
 • Now write a function named findAverage, that takes an array as an
@@ -34,13 +35,27 @@ size. */
 //     return   avg;
 // }
 // //console.log(findAverage(scores))
+function checkPalindrome(str) {
 
-function filterRange(arr,a,b){
-    let nwArry //= [];
-    for (let i = 0 ;i<arr.length;i++){
-        if(arr[i] >= a && arr[i] <= b){
-           
-       } nwArry[i] = arr[i]
+    // find the length of a string
+    const len = string.length;
+
+    // loop through half of the string
+    for (let i = 0; i < len / 2; i++) {
+
+        // check if first and last string are same
+        if (string[i] !== string[len - 1 - i]) {
+            return 'It is not a palindrome';
+        }
     }
-return nwArry}
-console.log(filterRange([0, 100, 3, 6, -555], 6, 60))
+    return 'It is a palindrome';
+}
+
+// take input
+const string = prompt('Enter a string: ');
+
+// call the function
+const value = checkPalindrome(string);
+
+console.log(value);
+

@@ -1,6 +1,6 @@
 "use strict";
 
-const fun = require("./w2d4arrays.js");
+const fun = require("./l8arrays.js");
 const assert = require("assert");
 
 
