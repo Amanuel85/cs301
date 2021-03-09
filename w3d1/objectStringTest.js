@@ -52,18 +52,18 @@ describe("checkSpam", function () {
 // 5.	Write a function named suffix that returns the common suffix of two strings. For example, the common suffix of “swimming” 
 // and “walking” is “ing”. This function takes two parameters and returns the common suffix.
 // */
-// describe("suffix", function () {
-//     const jackson = "Jackson";
-//     const johnson = "Johnson";
-//     const wholesome = "wholesome";
+describe("suffix", function () {
+    const jackson = "Jackson";
+    const johnson = "Johnson";
+    const wholesome = "wholesome";
 
-//     it("checks for true case", function () {
-//         assert.strictEqual(str.suffix(jackson, johnson), "son");
-//     });
-//     it("checks for false case", function () {
-//         assert.strictEqual(str.suffix(jackson, wholesome), "");
-//     });
-// });
+    it("checks for true case", function () {
+        assert.strictEqual(str.suffix(jackson, johnson), "son");
+    });
+    it("checks for false case", function () {
+        assert.strictEqual(str.suffix(jackson, wholesome), "");
+    });
+});
 
 
 
@@ -78,25 +78,27 @@ describe("checkSpam", function () {
 });
 
 // /*
-// 7.	Write the function getAverageAge(users) that gets an array of objects with two properties name and age and returns the average age.
+// 7.	Write the function getAverageAge(users) that gets an array of objects with 
+//two properties name and age and returns the average age.
 // Use for .. of
 // */
-// describe("average age", function () {
-//     const people = [{name:"Sam", age:20},  {name:"Fred", age:10}];
+describe("average age", function () {
+    const people = [{name:"Sam", age:20},  {name:"Fred", age:10}];
     
-//     it("checks for J", function () {
-//         assert.strictEqual(str.getAverageAge(people), 15);
-//     });
-// });
+    it("checks for J", function () {
+        assert.strictEqual(str.getAverageAge(people), 15);
+    });
+});
 
-// /* 8.	Write a function, sumFirst, to return the sum of the first elements of the inner arrays for arrays with the following structure. 
-// Use a for .. of loop.  
-// arr = [[1, 2], [3, 4], [5, 6]]  
-// */
-// describe("first elements", function () {
-//     const arr = [[1, 2], [3, 4], [5, 6]]  ;
+/* 8.	Write a function, sumFirst, to return the sum of the first elements
+of the inner arrays for arrays with the following structure. 
+Use a for .. of loop.  
+arr = [[1, 2], [3, 4], [5, 6]]  
+*/
+describe("first elements", function () {
+    const arr = [[1, 2], [3, 4], [5, 6]]  ;
     
-//     it("sum is 9", function () {
-//         assert.strictEqual(str.sumFirst(arr), 9);
-//     });
-// });
+    it("sum is 9", function () {
+        assert.strictEqual(str.sumFirst(arr), 9);
+    });
+});
