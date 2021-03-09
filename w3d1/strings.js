@@ -5,6 +5,7 @@ exports.checkSpam =checkSpam;
 exports.titleCase = titleCase;
 exports.getAverageAge =getAverageAge; 
 exports.sumFirst = sumFirst;
+exports.suffix = suffix;
 /*Implement the following and test your code using the Mocha test file objectStringTests.js in the
 mochaTests folder in the 301DemosNew repository.. Follow the standard submission instructions.
 1. Write the code, one line for each action:
@@ -59,9 +60,9 @@ function countProperties(obj){
         console.log(key);
         count = count+1;
     }
-return count }
+return count ;}
 const bob = { name: "Bob", age: 10 };
-console.log(countProperties(bob));
+//console.log(countProperties(bob));
 
 /* Write a function checkSpam(str) that returns true if str contains text "lottery" or "prize",
 otherwise return false. */
@@ -122,8 +123,12 @@ function titleCase(str){
 /* 
 Write the function getAverageAge(users) that gets an array of objects with two properties name and age and returns the average age.
 // Use for .. of */
+/**
+ * 
+ * @param {array} arr // 
+ * @returns{number}
+ */
 
-const people = [{name:"Sam", age:20},  {name:"Fred", age:10}]
 function getAverageAge(arr){
     let avg  
    let age = 0;
@@ -134,6 +139,7 @@ function getAverageAge(arr){
   avg =  age/arr.length
 return avg}
 
+//const people = [{name:"Sam", age:20},  {name:"Fred", age:10}]
 //console.log(getAverageAge(people));
 
 // /* 8.	Write a function, sumFirst, to return the sum of the first elements
@@ -147,4 +153,4 @@ function sumFirst(arr){
        sum = sum+arr[i][0]
     }
 return sum}
-console.log(sumFirst([[1, 2], [3, 4], [5, 6]]))
+//console.log(sumFirst([[1, 2], [3, 4], [5, 6]]))
