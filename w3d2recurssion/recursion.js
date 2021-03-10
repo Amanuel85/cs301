@@ -2,21 +2,7 @@
 exports.power =power;
 exports.reverse = reverse
 exports.countDigits =countDigits
-/*Write recursive functions to 
-count the digits of a given number */
-
-/**
- * 
- * @param {number} num , it takes number input
- * @returns{number} returns the count of digits
- */
-function countDigits(num){
-    if (num === 0){
-        return 0;
-    }
-    else  {return 1+ countDigits( parseInt(num/10)); }
-}
-console.log(countDigits(12348));
+//Write recursive functions to 
 
 // //calculate the power of any base
 /**
@@ -32,6 +18,22 @@ function power(a,b){
     else{return a*power(a,b-1)}
 }
 console.log(power(10,4));
+
+//count the digits of a given number */
+/**
+ * 
+ * @param {number} num , it takes number input
+ * @returns{number} returns the count of digits
+ */
+function countDigits(num){
+    if (num === 0){
+        return 0;
+    }
+    else  {return 1+ countDigits( parseInt(num/10)); }
+}
+console.log(countDigits(12348));
+
+
 
 //reverse a given string. 
 /**
