@@ -117,7 +117,7 @@ function countSockPair(arr) {
         }
         }
         }
-        if (minDist == Number.MAX_VALUE) {
+        if (minDist === Number.MAX_VALUE) {
         return -1;
         }
         return minDist;
