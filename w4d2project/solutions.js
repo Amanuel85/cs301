@@ -91,13 +91,9 @@ function countSockPair(arr) {
     height = height * 2;
     
     height = height + 1;
-    
     }
-    
     return height;
-    
     }
-    
     console.log(computeHeight(1,4));
 
     //q5
