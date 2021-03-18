@@ -34,7 +34,8 @@ describe("countProperties", function () {
 
 
 /*
-4.	Write a function checkSpam(str) that returns true if str contains text "lottery" or "prize", otherwise return false. 
+4.	Write a function checkSpam(str) that returns true if str contains text "lottery" or "prize", 
+otherwise return false. 
 */
 describe("checkSpam", function () {
 

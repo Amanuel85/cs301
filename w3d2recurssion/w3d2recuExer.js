@@ -56,7 +56,7 @@
     
 // }
 // console.log(strLength("Hello"))
-const facto = (n)=>{
-    return n>=1?n*facto(n-1):1
-}
-console.log(facto(4))
+// const facto = (n)=>{
+//     return n>=1?n*facto(n-1):1
+// }
+// console.log(facto(4))

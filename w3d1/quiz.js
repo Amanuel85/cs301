@@ -31,7 +31,7 @@ function findMin(arry){
         }
         }
     return min}
-//console.log(findMin([7, 10, 3, 88, 4]))
+console.log(findMin([7, 10, 100, 88, 4]))
 
 /*
 3. Write a function sumOddIndicesValues that takes an array as a parameter and returns the sum
@@ -39,13 +39,14 @@ of values on the odd indices.
 */
 function sumOddIndicesValues(arry){
     let len = arry.length
-    let oddIndex ;
+    //let oddIndex ;
     let sum =0
     for (let i = 0 ; i<len;i++){
-        if(len%2!==0){
-            oddIndex = oddIndex
+        if(i%2!==0){
+            //oddIndex = oddIndex
+            sum = sum + arry[i]
+
         }
-        sum = sum + arry[oddIndex]
     }
 return sum}
-console.log(sumOddIndicesValues([1,3,4,6,4,7,2] ))
+console.log(sumOddIndicesValues([1,3,4,6,4,7,2]))//4+6+7

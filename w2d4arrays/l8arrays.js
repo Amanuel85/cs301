@@ -46,7 +46,7 @@ function getMiddle(arr){
         midvalue = (arr[midindex]+(arr[midindex-1]))/2;}
 return midvalue;}
 
-//console.log(getMiddle([-1, -100, 1, 2, 3, -55]));
+console.log(getMiddle([-1, -100, 1,8, 2,6, 3, -55]));
 
 // 3 3. Write a function to rotate the elements in an array to the left by 1.
 //[-1, -100, 1, 2, 3, -55]), [-100, 1, 2, 3, -55, -1]

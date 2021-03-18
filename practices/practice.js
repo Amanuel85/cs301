@@ -391,29 +391,29 @@ console.log(isSumOddorEven(123456))
 
 // console.log(strictNum(6))
 
-function houseVolume(width, height, depth, sweep){
-    const lv = livingVolume(width, height, depth);
-    const rv = roofVolume(sweep, width, depth);
-    return  lv + rv;  
-}
+// function houseVolume(width, height, depth, sweep){
+//     const lv = livingVolume(width, height, depth);
+//     const rv = roofVolume(sweep, width, depth);
+//     return  lv + rv;  
+// }
 
-function livingVolume(width, height, depth){
-    return width * height * depth;
-}
+// function livingVolume(width, height, depth){
+//     return width * height * depth;
+// }
 
-function roofVolume(sweep, width, depth){
-    return triangleArea(sweep, sweep, width) * depth;
-}
+// function roofVolume(sweep, width, depth){
+//     return triangleArea(sweep, sweep, width) * depth;
+// }
 
-function triangleArea(sideA, sideB, sideC){
-    const s = (sideA + sideB + sideC)/2
-    const product = s * (s - sideA) * (s - sideB) * (s - sideC);
-    const result = Math.sqrt(product);
-    return result;
-}
+// function triangleArea(sideA, sideB, sideC){
+//     const s = (sideA + sideB + sideC)/2
+//     const product = s * (s - sideA) * (s - sideB) * (s - sideC);
+//     const result = Math.sqrt(product);
+//     return result;
+// }
 
-console.log("expect 2080", houseVolume(16,10,10,10));
-//roof:  8 * 6 = 48, * 10 = 480
+// console.log("expect 2080", houseVolume(16,10,10,10));
+// //roof:  8 * 6 = 48, * 10 = 480
 //living 10*10*16 = 1600
 //tot 2080
 // const evenOrOdd = function(n){
@@ -423,3 +423,86 @@ console.log("expect 2080", houseVolume(16,10,10,10));
 //     }
 // return even}
 // evenOrOdd(5)
+//let prompt = require("prompt-sync")();
+// let input =   +prompt("enter a number");
+// //let prompt = require("prompt-sync")();
+// //input  = +prompt("enter a number")
+// while(input !==7){
+// input = +prompt("enter a number")
+// }
+// console.log("exiting")
+
+// for(let i =0;i<=100;i++){
+//     if(i%2==0&&i%7==0){
+//         console.log("FizzBuzz")}
+//    else  if(i%2 === 0 ){
+//     console.log("Fizz")}
+//     else if(i%7===0){
+//     console.log("Buzz")}
+  
+//     else{console.log(i)}
+//     }
+//let prompt = require("prompt-sync")();
+// let totalitem= +prompt("how many items")
+// let totalPrice = 0;
+// for(let i = 0;i<totalitem;i++){
+// let price = +prompt("enter price of item",i)
+// totalPrice = totalPrice+price }
+// console.log(totalPrice)
+// if (totalPrice > 108){
+// totalPrice = totalPrice -totalPrice*8/100
+// }
+// console.log(totalPrice)
+// function sumDigit (num){
+//     let sum = 0;
+//     while(num>0){
+//     let digit = num%10
+//     sum = sum+digit
+//     num = parseInt(num/10)}
+//     return sum}
+//     console.log(sumDigit(12345))
+// function nthStacked(n){
+//     let sum = 0; 
+//     let stack 
+//     for(let i = 1 ;i<n;i++){
+//     sum = sum+i
+//     if (sum === n){
+//         stack = true
+//         }
+//         else {stack = false}}
+    
+//    return sum }
+//     console.log(nthStacked(3))
+// let sayHi = function() {
+//     console.log( "Hi" );
+//   };
+//   console.log(sayHi())
+
+//   let syHello = ()=>{
+//       console.log("Hello")
+//   }
+//   sayHi();
+//   syHello()
+//Define an array to be sum-safe if none of its elements is equal to the sum of its
+// let sumSafe = function(arr){
+//     let sum = 0;
+//     let safe = true;
+//     for(let i =0 ;i<arr.length;i++){
+//         sum = sum+arr[i]
+//     }
+//     for (let i = 0;i<arr.length;i++){
+//     if(arr[i]=== sum){
+//         safe = false 
+//     }
+//     }
+// return safe }
+// console.log(sumSafe([5, -2, 1]))
+//3. Use array map method to map each value of a given array to its absolute value.
+// let arr = [-1,3,-4,5,6,9]
+// let newarr = arr.map(Math.abs)
+// console.log(newarr)
+// 4. Use array filter method to filter out strings that contains "_" from a string array
+orginal = ["this", "that", "Hi_there", "How_are_you"]
+newarr = orginal.filter( function(arr){
+    return 
+})

@@ -66,7 +66,7 @@ const bob = { name: "Bob", age: 10 };
 
 /* Write a function checkSpam(str) that returns true if str contains text "lottery" or "prize",
 otherwise return false. */
-//let string1 = "there is a prize in the lottery"
+let string1 = "there is a  in the   "
 /**
  * 
  * @param {str} str //
@@ -76,7 +76,7 @@ function checkSpam(str){
     let word = str.includes("lottery",0) || str.includes("prize",0);
     return word ;
 }
-// console.log(checkSpam(string1))
+console.log(checkSpam(string1))
 
 /* 5. Write a function named suffix that returns the common suffix of two strings. For example, the
 common suffix of “swimming” and “walking” is “ing”. This function takes two parameters and
@@ -121,7 +121,8 @@ function titleCase(str){
 //console.log(titleCase("jackson"))
 
 /* 
-Write the function getAverageAge(users) that gets an array of objects with two properties name and age and returns the average age.
+Write the function getAverageAge(users) that gets an array of objects with two properties 
+name and age and returns the average age.
 // Use for .. of */
 /**
  * 
